@@ -1,0 +1,18 @@
+.hero{
+
+}
+
+.navbar{
+    border:1px solid red; 
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    &__list{
+        display: flex;
+        width: 30rem;
+        justify-content: space-between;
+        
+    }
+}
