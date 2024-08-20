@@ -1,0 +1,19 @@
+@use "global"; 
+
+footer{
+    background-color: global.$primary-black;
+    height: 8rem;
+    text-align: center;
+    padding: 1rem;
+    .logo {
+        font-size: 1.6rem;
+        font-family: "Electrolize", sans-serif;
+        color: global.$primary-white;
+      }
+    ul{
+       
+        li{
+            padding: 1rem;
+        }
+    }
+}
