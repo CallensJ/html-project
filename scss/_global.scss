@@ -39,7 +39,7 @@ html {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--grid-gap); /* Espace entre les colonnes */
+//   gap: var(--grid-gap);
 
   font-size: var(--font-size); /* Taille de la police de base */
   //   border: 1px dashed black;
@@ -54,6 +54,17 @@ li {
 }
 a {
   text-decoration: none;
+}
+
+.btn{
+    background-color: $primary-yellow;
+    padding: 1rem 8.6rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: $primary-black;
+    font-weight: 700;
+    
 }
 
 /* Responsive design */

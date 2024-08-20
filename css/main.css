@@ -36,7 +36,6 @@ html {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--grid-gap); /* Espace entre les colonnes */
   font-size: var(--font-size); /* Taille de la police de base */
 }
 
@@ -51,6 +50,16 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  background-color: #fff278;
+  padding: 1rem 8.6rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #020202;
+  font-weight: 700;
 }
 
 /* Responsive design */
@@ -147,6 +156,38 @@ a {
   .navbar__item {
     padding: 8px 0;
     width: 100%;
+  }
+}
+.intersection {
+  height: auto;
+  padding: 2rem 0;
+  background-color: #020202;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.formulaire {
+  width: 80%;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+form input {
+  padding: 1rem;
+  background-color: rgb(63, 63, 63);
+  border: none;
+}
+form input::placeholder {
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  input {
+    margin: 1rem;
   }
 }
 
