@@ -1,0 +1,32 @@
+@use "global";
+
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: global.$primary-black;
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

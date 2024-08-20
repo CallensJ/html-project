@@ -1,8 +1,8 @@
 @use "global"; // Importez les variables
 
 .intersection{
-height: auto;
-padding: 2rem 0;
+height: 30rem;
+padding: 2rem 1rem;
 background-color: global.$primary-black;
 display: flex;
 justify-content: space-around;
@@ -11,7 +11,7 @@ align-items: center;
 
 .formulaire{
     width: 80%;
-    // border: 1px solid red;
+    border: 1px solid red;
 
 
 }
@@ -20,13 +20,14 @@ form{
     justify-content: space-evenly;
     flex-wrap: wrap;
     input{
-        padding: 1rem;
+        padding: 1.6rem 1rem;
         background-color: rgb(63, 63, 63);
         border: none;
        
     }
     input::placeholder{
         color: global.$primary-white;
+        padding-left: 1rem;
     }
 }
 

@@ -159,8 +159,8 @@ a {
   }
 }
 .intersection {
-  height: auto;
-  padding: 2rem 0;
+  height: 30rem;
+  padding: 2rem 1rem;
   background-color: #020202;
   display: flex;
   justify-content: space-around;
@@ -169,6 +169,7 @@ a {
 
 .formulaire {
   width: 80%;
+  border: 1px solid red;
 }
 
 form {
@@ -177,17 +178,47 @@ form {
   flex-wrap: wrap;
 }
 form input {
-  padding: 1rem;
+  padding: 1.6rem 1rem;
   background-color: rgb(63, 63, 63);
   border: none;
 }
 form input::placeholder {
   color: #ffffff;
+  padding-left: 1rem;
 }
 
 @media (max-width: 480px) {
   input {
     margin: 1rem;
+  }
+}
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #020202;
+}
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
