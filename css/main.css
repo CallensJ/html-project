@@ -66,6 +66,7 @@ a {
   border: none;
   cursor: pointer;
   color: #020202;
+  box-shadow: 1px 1px 10px 1px #020202;
   font-weight: 700;
 }
 
@@ -174,17 +175,17 @@ a {
   width: 80%;
 }
 
-form {
+.form {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-form input {
+.form input {
   padding: 1.6rem 1rem;
   background-color: rgb(63, 63, 63);
   border: none;
 }
-form input::placeholder {
+.form input::placeholder {
   color: #ffffff;
   padding-left: 1rem;
 }
@@ -235,33 +236,64 @@ form input::placeholder {
     justify-content: center;
   }
 }
-.gallery {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: #020202;
+.images-gallery .inner-container {
+  background-image: linear-gradient(to bottom, rgba(39, 39, 40, 0.52), rgba(10, 10, 10, 0.73)), url("../assets/11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
 }
-.gallery .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.gallery .gallery-item img {
+
+.images-container {
+  display: flex;
   width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.images-container .image {
+  width: 30rem;
   height: auto;
-  display: block;
   object-fit: cover;
 }
 
-@media (max-width: 1200px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.contact .inner-container {
+  background-image: linear-gradient(to bottom, rgba(39, 39, 40, 0.52), rgba(10, 10, 10, 0.73)), url("../assets/11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
 }
+
+.contact-form {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .formu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 30rem;
+  box-shadow: 5px 5px 15px 5px #020202;
+}
+.contact-form .formu input,
+.contact-form .formu textarea {
+  width: 100%;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
 @media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: repeat(1, 1fr);
+  .contact-form {
+    justify-content: center;
+  }
+  .contact-form .formu {
+    width: 50rem;
+    height: 40rem;
   }
 }
 footer {

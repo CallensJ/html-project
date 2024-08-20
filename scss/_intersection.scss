@@ -1,39 +1,35 @@
 @use "global"; // Importez les variables
 
-.intersection{
-height: 30rem;
-padding: 2rem 1rem;
-background-color: global.$primary-black;
-display: flex;
-justify-content: space-around;
-align-items: center;
+.intersection {
+  height: 30rem;
+  padding: 2rem 1rem;
+  background-color: global.$primary-black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.formulaire{
-    width: 80%;
-    // border: 1px solid red;
-
-
+.formulaire {
+  width: 80%;
+  // border: 1px solid red;
 }
-form{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    input{
-        padding: 1.6rem 1rem;
-        background-color: rgb(63, 63, 63);
-        border: none;
-       
-    }
-    input::placeholder{
-        color: global.$primary-white;
-        padding-left: 1rem;
-    }
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  input {
+    padding: 1.6rem 1rem;
+    background-color: rgb(63, 63, 63);
+    border: none;
+  }
+  input::placeholder {
+    color: global.$primary-white;
+    padding-left: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    input{
-        margin:1rem;
-    }
+  input {
+    margin: 1rem;
   }
-  
+}
